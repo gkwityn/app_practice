@@ -1,0 +1,52 @@
+body{
+    background-color:rgb(170, 170, 170);
+    backg
+   
+}
+
+#sortingWindow{
+    position: relative;    
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%; 
+    margin-bottom: auto; 
+   
+
+    height: 600px;
+    width: 800px;
+
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+#controlPanel{  
+
+    position: relative;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2px;
+
+    height: 100px;
+    width: 800px;
+
+    background-color: lightyellow;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+
+    
+}
+
+#line{
+
+    position: relative;   
+    margin-left: 0%;    
+    width: 8px;
+    height: 600px;
+    
+    background-color: rgba(30, 143, 255, 0.808);
+}
+
