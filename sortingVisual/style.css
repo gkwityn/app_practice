@@ -1,7 +1,7 @@
-body{
-    background-color:rgb(170, 170, 170);
-    backg
-   
+html, body{
+    height: 100%;
+    background-image: linear-gradient(rgb(247, 247, 247), rgb(194, 194, 194));  
+    
 }
 
 #sortingWindow{
@@ -32,21 +32,41 @@ body{
     height: 100px;
     width: 800px;
 
-    background-color: lightyellow;
+    background-color: rgb(166, 177, 201);
     border: 2px solid black;
-    border-radius: 5px;
-    
-
-    
+    border-radius: 5px;   
 }
 
+/* 
 #line{
 
     position: relative;   
-    margin-left: 0%;    
+    background-color: rgba(30, 143, 255, 0.808);       
     width: 8px;
     height: 600px;
-    
-    background-color: rgba(30, 143, 255, 0.808);
+    margin-left: 0%;     
+} 
+*/
+
+
+#sortingAlgorithm{
+    position: relative;
+
+    margin-left: 41.5%;
+    margin-top: 2.0%;
+}
+
+#start{
+    position: relative;
+
+    margin-left: 45%;
+    margin-top: 1%;
+}
+
+#reset{
+    position: relative;
+
+    margin-left: 45%;
+    margin-top: 1%;
 }
 

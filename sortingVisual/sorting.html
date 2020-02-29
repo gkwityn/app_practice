@@ -9,12 +9,20 @@
 </head>
 <body>
     <div id="sortingWindow">
-        <div id="line"></div>
+        <div id="insert"></div>
+        <!-- <div id="line"></div> -->
 
     </div>
 
     <div id="controlPanel">
-        <Form> <input id="slider" type="range"> </Form>
+        <select id="sortingAlgorithm">
+            <option value= "binary">BINARY-SORT</option>
+            <option value= "quicksort">QUICK-SORT</option>
+            <option value="bubblesort">BUBBLE-SORT</option>
+        </select>
+        <button id="start" onclick="start()">START</button>
+        <button id="reset" onclick="reset()">RESET</button>
+        
     </div>
 
 </body>
