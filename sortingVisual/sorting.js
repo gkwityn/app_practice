@@ -1,8 +1,6 @@
 var a = new Array;
 
-
-
-function start(){   
+async function start(){   
 
 
     //insertionSort();
@@ -13,7 +11,7 @@ function start(){
     
     switch(sortAlg){
         case "insertionsort":
-             insertionSort(a);
+             await insertionSort(a);
              break;
          
         case "selectionsort":
@@ -32,7 +30,7 @@ function start(){
         
 }  
 
-function reset(){
+async function reset(){
     
     a = new Array;
 
@@ -40,16 +38,18 @@ function reset(){
     
     if(myEle){       
         deleteElements();
-        createRandomBar();
+       await createRandomBar();
     }   
     else
-        createRandomBar();       
+       await createRandomBar();       
     
 }  
   
 
 
-function swap(a, i, j) {
+async function swap(a, i, j) {
+
+    await sleep(50);
     
     var temp = a[i];
     var tempElement = document.getElementById(String(i)).style.height;
@@ -64,7 +64,7 @@ function swap(a, i, j) {
 
 
 
-function insertionSort(){
+async function insertionSort(){
     //insertion sort        
     var len = a.length;
 
@@ -78,7 +78,7 @@ function insertionSort(){
             } 
         }            
         if (j_min !== i) {
-            swap(a, i, j_min);                                
+           await swap(a, i, j_min);                                
         }        
     }  
 }
@@ -120,13 +120,15 @@ function selectionSort(){
 
 
 
-function createRandomBar(){
+async function createRandomBar(){
     
     //alert("check does not exists");
 
     let margin = 0;        
 
-    for(let x = 0; x < 100; x++){
+    for(let x = 0; x < 100; x++){    
+        
+        await sleep(10);
         
         let height = Math.floor((Math.random() * 600) + 1)
 
@@ -158,3 +160,6 @@ function deleteElements(){
 }            
 
 
+function sleep(ms){
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
