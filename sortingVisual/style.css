@@ -5,6 +5,7 @@ html, body{
 }
 
 #sortingWindow{
+
     position: relative;    
 
     margin-left: auto;
@@ -16,10 +17,9 @@ html, body{
     height: 600px;
     width: 800px;
 
-    background-color: white;
+    background-color: black;
     border: 2px solid black;
     border-radius: 5px;
-
 }
 
 #controlPanel{  
@@ -34,7 +34,7 @@ html, body{
 
     background-color: rgb(166, 177, 201);
     border: 2px solid black;
-    border-radius: 5px;   
+    border-radius: 5px;    
 }
 
 /* 
