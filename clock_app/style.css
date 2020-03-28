@@ -1,0 +1,89 @@
+body{
+    background-color: lightslategray;
+}
+
+
+.analog_clock{
+    position: relative;
+    background: linear-gradient(to top left, rgb(56, 40, 40) 0%, rgb(10, 10, 10) 100% );
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 15%;
+    border: solid whitesmoke 5px;
+    border-radius: 50%;
+}
+
+.digital_clock{
+    position: relative;
+    background-color: ;
+    background: linear-gradient(to top left, rgb(43, 38, 38) 0%, rgb(0, 0, 0) 95% );
+    width: 300px;
+    height:100px;
+    margin: auto;
+    margin-top: 10%;
+    border: solid whitesmoke 5px;
+    border-radius: 10px;
+}
+
+.sec_hand{
+    position: absolute;
+    background-color: whitesmoke;
+    height: 145px;
+    width: 2px;
+background-color: red;
+
+    margin-left: 52%;
+    margin-top: 0%;
+
+    transform-origin: bottom left;
+    animation: rotate 60s infinite linear;
+}
+
+.min_hand{
+    position: absolute;
+    background-color: whitesmoke;
+    height: 125px;
+    width: 5px;
+
+    margin-left: 50%;
+    margin-top: 7%;
+
+    transform-origin: bottom left;
+    animation: rotate 3600s infinite linear;
+}
+
+
+.hour_hand{
+    position: absolute;
+    background-color: whitesmoke;
+    height: 110px;
+    width: 10px;
+
+    margin-left: 50%;
+    margin-top: 12%;
+
+    transform-origin: bottom left;
+    animation: rotate 21600s infinite linear;
+}
+
+.clock_center{
+    position: absolute;
+    background-color: rgb(39, 39, 112);
+    height: 25px;
+    width: 25px;
+
+    margin-left: 47%;
+    margin-top: 45%;
+
+    border-radius: 50%;
+
+}
+
+
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
