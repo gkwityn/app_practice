@@ -27,14 +27,14 @@ of the given width and height.
 //Board size: D x D
 //Change to resize board.
 
-let dimention = 15;
+let dimension = 15;
 let board = "";
 
-for(var i = 1; i <= dimention; i++){
+for(var i = 1; i <= dimension; i++){
 
     if( i % 2 !== 0){
 
-        for(var j = 1; j <= dimention; j++){
+        for(var j = 1; j <= dimension; j++){
             if(j % 2 !== 0)
                 board += " ";
             else
@@ -43,7 +43,7 @@ for(var i = 1; i <= dimention; i++){
     }
     else{
 
-        for(let k = 1; k <= dimention;k++){
+        for(let k = 1; k <= dimension;k++){
             if(k % 2 !== 0) 
                 board += "#";
             else
